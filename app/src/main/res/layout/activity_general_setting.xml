@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GeneralSetting">
+
+
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/emailImg"
+            android:src="@drawable/email"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <TextView
+            android:textColor="@color/green"
+            android:id="@+id/emailId"
+            android:text="Email -:"
+            android:layout_toRightOf="@id/emailImg"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="5dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/emailTv"
+            android:text="abc@gmail.com"
+            android:textColor="@color/textColor"
+            android:layout_toRightOf="@id/emailId"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TIlchangeEmail"
+            android:layout_below="@id/emailId"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:boxStrokeColor="@color/TILStroke"
+
+            app:boxStrokeWidth="1dp"
+            android:background="@color/backgroundColor"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            app:hintTextColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="New Email Id"
+                android:textSize="16dp"
+                android:textColorHint="@color/textColor"
+                android:textColor="@color/textColor"
+                android:id="@+id/newEmailId"
+                android:drawableStart="@drawable/email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_below="@id/TIlchangeEmail"
+            android:background="@color/backgroundGrey"
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+
+        </View>
+
+        <TextView
+            android:textColor="@color/green"
+            android:id="@+id/changePassword"
+            android:text="Change Password"
+
+            android:textSize="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="25dp"
+
+            android:layout_below="@id/TIlchangeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILpassword"
+            android:layout_below="@id/changePassword"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:boxStrokeColor="@color/TILStroke"
+            app:boxStrokeWidth="1dp"
+            android:background="@color/backgroundColor"
+            android:layout_marginTop="10dp"
+            app:hintTextColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="New Password"
+                android:id="@+id/newPassword"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:drawableStart="@drawable/password"
+                android:textSize="16dp"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TILConfirmpassword"
+            android:layout_below="@id/TILpassword"
+               android:textColorHint="@color/textColor"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:boxStrokeColor="@color/TILStroke"
+            app:boxStrokeWidth="1dp"
+            android:layout_marginBottom="15dp"
+
+            app:hintTextColor="@color/textColor"
+            android:layout_marginTop="10dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Confirm Password"
+
+                android:drawableStart="@drawable/password"
+                android:textColorHint="@color/textColor"
+
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                android:id="@+id/confirmPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_below="@id/TILConfirmpassword"
+            android:background="@color/backgroundGrey"
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+
+        </View>
+
+        <TextView
+
+            android:text="Delete Account"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@id/line2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

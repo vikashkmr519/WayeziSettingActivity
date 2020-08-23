@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WayeziFAQAcitvity">
+
+    <TextView
+        android:id="@+id/faqTv"
+        android:text="FAQ"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/q1"
+        android:text="HOW CAN I USE MY REMAINING ACCOUNT CREDITS?"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_below="@id/faqTv"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/q2"
+        android:text="HOW CAN I USE MY REMAINING ACCOUNT CREDITS?"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/q1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/q3"
+        android:text="HOW CAN I USE MY REMAINING ACCOUNT CREDITS?"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/q2"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/q4"
+        android:text="HOW CAN I USE MY REMAINING ACCOUNT CREDITS?"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/q3"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/q5"
+        android:text="HOW CAN I USE MY REMAINING ACCOUNT CREDITS?"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_below="@id/q4"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/q6"
+        android:text="HOW CAN I USE MY REMAINING ACCOUNT CREDITS?"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/textColor"
+        android:layout_below="@id/q5"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/q7"
+        android:text="HOW CAN I USE MY REMAINING ACCOUNT CREDITS?"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/q6"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+</RelativeLayout>

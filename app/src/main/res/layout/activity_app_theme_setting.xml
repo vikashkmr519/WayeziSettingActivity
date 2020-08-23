@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:gravity="center"
+    tools:context=".Activity.AppThemeSettingActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/lightCard"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:elevation="15dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:src="@drawable/light_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"></ImageView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_below="@id/lightCard"
+        android:layout_margin="16dp"
+        android:id="@+id/lightBtn"
+        android:text="Light Mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_below="@id/lightBtn"
+        android:id="@+id/darkcard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="15dp"
+
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+        <ImageView
+            android:src="@drawable/dark_mode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginStart="16dp"
+        android:id="@+id/darkBtn"
+        android:layout_margin="16dp"
+        android:text="Dark Mode"
+        android:layout_below="@id/darkcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>

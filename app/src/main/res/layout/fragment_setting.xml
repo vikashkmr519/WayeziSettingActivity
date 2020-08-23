@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    tools:context=".Fragments.SettingFragment">
+
+
+
+    <ScrollView
+        android:background="@color/backgroundGrey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/backgroundGrey"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/accountCard"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginEnd="5dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/accountHeading"
+                        android:text="Account"
+
+                        android:textColor="@color/green"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/generalRL"
+                        android:background="@color/backgroundColor"
+                        android:layout_below="@id/accountHeading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/generalImg"
+                            android:src="@drawable/general"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/generalTv"
+                            android:layout_toRightOf="@id/generalImg"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="8dp"
+                            android:textSize="17dp"
+                            android:textColor="@color/textColor"
+                            android:layout_marginEnd="16dp"
+                            android:text="General"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </RelativeLayout>
+
+
+
+                    <View
+                        android:layout_marginStart="16dp"
+                        android:id="@+id/generalLine"
+                        android:layout_below="@id/generalRL"
+                        android:background="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp">
+
+                    </View>
+                    <RelativeLayout
+                        android:layout_below="@id/generalLine"
+                        android:id="@+id/profileRL"
+                        android:background="@color/backgroundColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/profileImg"
+                            android:src="@drawable/profile1"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/profileTv"
+                            android:text="Profile"
+                            android:textSize="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="@color/textColor"
+                            android:layout_toRightOf="@id/profileImg"
+
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginStart="16dp"
+                        android:id="@+id/profileLine"
+                        android:layout_below="@id/profileRL"
+                        android:background="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp">
+
+                    </View>
+                    <RelativeLayout
+                        android:id="@+id/schoolRL"
+                        android:layout_below="@id/profileLine"
+                        android:background="@color/backgroundColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/schoolImg"
+                            android:src="@drawable/school"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/schoolTv"
+                            android:text="School"
+                            android:textSize="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="@color/textColor"
+
+                            android:layout_toRightOf="@id/schoolImg"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/themeCard"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/accountCard"
+                android:background="@color/backgroundColor"
+                android:layout_marginEnd="5dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/themeRL"
+
+                android:layout_marginTop="11dp"
+
+                android:background="@color/backgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/themeTv"
+                    android:text="Themes And Personalization"
+
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <RelativeLayout
+                    android:id="@+id/appThemeRL"
+                    android:layout_below="@id/themeTv"
+                    android:background="@color/backgroundColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/appthemeImg"
+                        android:src="@drawable/app_theme"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/AppthemeTv"
+                        android:text="App Theme"
+                        android:textSize="16dp"
+                        android:textColor="@color/textColor"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toRightOf="@id/appthemeImg"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginStart="16dp"
+                    android:id="@+id/appthemeLine"
+                    android:layout_below="@id/appThemeRL"
+                    android:background="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp">
+
+                </View>
+                <RelativeLayout
+                    android:background="@color/backgroundColor"
+                    android:id="@+id/chatThemeRL"
+                    android:layout_below="@id/appthemeLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/chatthemeImg"
+                        android:src="@drawable/chat_theme"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/ChatThemeTv"
+                        android:text="Chat Theme"
+                        android:textSize="16dp"
+                        android:textColor="@color/textColor"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toRightOf="@id/chatthemeImg"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/othercard"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/themeCard"
+                android:layout_marginEnd="5dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_below="@id/themeCard"
+                android:layout_marginTop="10dp"
+                android:background="@color/backgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/othersTv"
+                    android:text="Others"
+
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_below="@id/othersTv"
+                    android:id="@+id/FAQRL"
+                    android:background="@color/backgroundColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/faqImg"
+                        android:src="@drawable/faq"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/wayeziFAQtv"
+                        android:textColor="@color/textColor"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="17dp"
+                        android:layout_toRightOf="@id/faqImg"
+                        android:layout_marginEnd="16dp"
+                        android:text="Wayezi FAQ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_marginStart="16dp"
+                    android:id="@+id/FAQline"
+                    android:layout_below="@id/FAQRL"
+                    android:background="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp">
+
+                </View>
+                <RelativeLayout
+                    android:id="@+id/privacypolicyRL"
+                    android:background="@color/backgroundColor"
+                    android:layout_below="@id/FAQline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/privacyPolicyImg"
+                        android:src="@drawable/privacy_policy"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/PrivacypolicyTv"
+                        android:text="Privacy Policy"
+                        android:textSize="16dp"
+                        android:textColor="@color/textColor"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toRightOf="@id/privacyPolicyImg"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginStart="16dp"
+                    android:id="@+id/PrivacyLine"
+                    android:layout_below="@id/privacypolicyRL"
+                    android:background="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp">
+
+                </View>
+                <RelativeLayout
+                    android:background="@color/backgroundColor"
+                    android:id="@+id/logoutRL"
+
+                    android:layout_below="@id/PrivacyLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/logoutImg"
+                        android:src="@drawable/ic_baseline_power_settings_new_24"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/logoutTv"
+                        android:text="Logout"
+                        android:textSize="16dp"
+                        android:textColor="@color/textColor"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toRightOf="@id/logoutImg"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>
