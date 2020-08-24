@@ -12,7 +12,7 @@
         <activity android:name=".Activity.PrivacyPolicyActivity"></activity>
         <activity android:name=".Activity.WayeziFAQAcitvity" />
         <activity android:name=".Activity.ChatThemeActivity" />
-        <activity android:name=".Activity.privacyPolicyActivity" />
+
         <activity android:name=".Activity.AppThemeSettingActivity" />
         <activity android:name=".Activity.SchoolSettingActivity" />
         <activity android:name=".Activity.ProfileSettingsActivity" />

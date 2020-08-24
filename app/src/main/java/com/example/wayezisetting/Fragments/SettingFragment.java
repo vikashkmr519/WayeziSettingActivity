@@ -3,6 +3,7 @@ package com.example.wayezisetting.Fragments;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -26,7 +27,7 @@ public class SettingFragment extends Fragment {
 
 
     RelativeLayout general,profile,school,appTheme,chatTheme,wayezifaq,privacypolicy,Logout;
-    MaterialCardView accountCard,themeCard,otherCard;
+    CardView accountCard,themeCard,otherCard;
     public SettingFragment() {
         // Required empty public constructor
     }

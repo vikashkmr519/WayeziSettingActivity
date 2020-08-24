@@ -24,6 +24,7 @@ public class MainActivity extends FragmentActivity {
          FragmentManager fragmentManager = getSupportFragmentManager();
 
 
+
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragmentContainer,fragment).commit();
     }

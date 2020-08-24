@@ -10,29 +10,36 @@
 
 
     <ScrollView
-        android:background="@color/backgroundGrey"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <RelativeLayout
-            android:background="@color/backgroundGrey"
+
 
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.google.android.material.card.MaterialCardView
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/accountCard"
-                android:layout_marginStart="5dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginStart="8dp"
 
-                android:layout_marginEnd="5dp"
-                app:cardElevation="20dp"
+                app:cardBackgroundColor="@color/backgroundColor"
+
+
+                android:layout_marginEnd="8dp"
+                app:cardElevation="30dp"
                 app:cardCornerRadius="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="55dp"
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <RelativeLayout
 
-
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/backgroundColor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
@@ -172,11 +179,12 @@
 
                 </RelativeLayout>
 
-            </com.google.android.material.card.MaterialCardView>
+            </androidx.cardview.widget.CardView>
 
 
-            <com.google.android.material.card.MaterialCardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/themeCard"
+                android:layout_marginBottom="40dp"
                 android:layout_marginStart="5dp"
                 android:layout_below="@id/accountCard"
                 android:background="@color/backgroundColor"
@@ -191,11 +199,12 @@
             <RelativeLayout
                 android:id="@+id/themeRL"
 
-                android:layout_marginTop="11dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
 
                 android:background="@color/backgroundColor"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
                 <TextView
                     android:id="@+id/themeTv"
                     android:text="Themes And Personalization"
@@ -287,9 +296,9 @@
 
 
             </RelativeLayout>
-            </com.google.android.material.card.MaterialCardView>
+            </androidx.cardview.widget.CardView>
 
-            <com.google.android.material.card.MaterialCardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/othercard"
                 android:layout_marginStart="5dp"
                 android:layout_below="@id/themeCard"
@@ -302,8 +311,10 @@
                 android:layout_height="wrap_content">
             <RelativeLayout
                 android:layout_below="@id/themeCard"
-                android:layout_marginTop="10dp"
                 android:background="@color/backgroundColor"
+
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -345,7 +356,7 @@
                         android:textSize="17dp"
                         android:layout_toRightOf="@id/faqImg"
                         android:layout_marginEnd="16dp"
-                        android:text="Wayezi FAQ"
+                        android:text="FAQ"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -442,7 +453,7 @@
 
 
             </RelativeLayout>
-            </com.google.android.material.card.MaterialCardView>
+            </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
     </ScrollView>
